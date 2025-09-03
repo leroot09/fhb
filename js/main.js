@@ -20,9 +20,45 @@ function initNavigation() {
     
     // Mobile menu toggle
     if (mobileToggle) {
+        // Fallback overlay container appended to body for robust rendering
+        let overlay = document.getElementById('mobileNavOverlay');
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'mobileNavOverlay';
+            overlay.className = 'mobile-nav-overlay';
+            // Clone links from navMenu if present; else pull from DOM
+            const linkContainer = navMenu || document.querySelector('.nav-menu');
+            if (linkContainer) {
+                linkContainer.querySelectorAll('a').forEach(a => {
+                    const clone = a.cloneNode(true);
+                    overlay.appendChild(clone);
+                });
+            }
+            document.body.appendChild(overlay);
+        }
+
         mobileToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
+            const willOpen = !overlay.classList.contains('active');
+            overlay.classList.toggle('active');
+            if (navMenu) {
+                navMenu.classList.toggle('active');
+                if (willOpen) navMenu.style.display = 'flex'; else navMenu.style.display = '';
+            }
             mobileToggle.classList.toggle('active');
+            document.body.style.overflow = willOpen ? 'hidden' : '';
+        });
+
+        // Close overlay when clicking a link
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('#mobileNavOverlay a')) {
+                overlay.classList.remove('active');
+                if (navMenu) {
+                    navMenu.classList.remove('active');
+                    navMenu.style.display = '';
+                }
+                mobileToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         });
     }
     

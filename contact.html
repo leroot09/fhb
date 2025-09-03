@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fast House Buyers Houston</title>
+    <meta name="description" content="Contact Fast House Buyers Houston. Call (832) 602-2021 or fill out our contact form. We buy houses fast for cash in Houston, TX.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="css/style.css?v=7">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-brand">
+                    <a href="/" class="logo">
+                        <span class="logo-icon">🏠</span>
+                        <span class="logo-text">Fast House Buyers</span>
+                    </a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="/" class="nav-link">Sell Your House</a>
+                    <a href="/how-we-buy-houses.html" class="nav-link">How We Buy Houses</a>
+                    <a href="/testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="/get-a-cash-offer-today.html" class="nav-link">Get A Cash Offer Today</a>
+                    <a href="/foreclosure.html" class="nav-link">Foreclosure</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="tel:+1-832-602-2021" class="nav-phone">
+                        <i data-lucide="phone"></i>
+                        <span>(832) 602-2021</span>
+                    </a>
+                    <button class="btn btn-primary nav-cta" onclick="openOfferModal()">Get Cash Offer</button>
+                    <button class="mobile-toggle" id="mobileToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="badge badge-primary">
+                    <i data-lucide="phone"></i>
+                    <span>Get In Touch</span>
+                </div>
+                <h1>Connect With Us!</h1>
+                <p>Have some questions you want to ask us?</p>
+            </div>
+        </section>
+
+        <!-- Contact Content Section -->
+        <section class="contact-content-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="welcome-text">
+                            <h2>Excellent! We love talking with people to see how we can help you reach your goals.</h2>
+                        </div>
+
+                        <div class="questions-section">
+                            <h3>If you have questions about…</h3>
+                            <ul class="questions-list">
+                                <li>
+                                    <i data-lucide="dollar-sign"></i>
+                                    <span>Our process for making you an <strong>all cash offer for your house</strong></span>
+                                </li>
+                                <li>
+                                    <i data-lucide="shield-check"></i>
+                                    <span>Our process for helping homeowners <a href="/stop-foreclosure.html" class="text-link">stop foreclosure in Houston</a> if your situation qualifies</span>
+                                </li>
+                                <li>
+                                    <i data-lucide="building"></i>
+                                    <span>Our company and who we are</span>
+                                </li>
+                                <li>
+                                    <i data-lucide="message-circle"></i>
+                                    <span>… or anything else you want to ask us (even just to make sure we're real people 🙂)</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="contact-methods">
+                            <p>Just give us a ring at the phone number below or shoot us an email through the form. We'll get back to you within 48 hours. If you need us quicker, make sure to call as we're able to answer phone calls more quickly than we're able to return emails.</p>
+                            <p><strong>Chat with you soon!</strong></p>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="info-header">
+                                <i data-lucide="map-pin"></i>
+                                <h3>Contact Info:</h3>
+                            </div>
+                            <div class="company-details">
+                                <h4>Fast House Buyers</h4>
+                                <p>11815 Marrs Dr<br>Houston, TX 77065</p>
+                                <a href="tel:+1-832-602-2021" class="phone-main">
+                                    <i data-lucide="phone"></i>
+                                    (832) 602-2021 Click To Call Now!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <div class="form-card-contact">
+                            <div class="form-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <h3>Contact Us</h3>
+                            <p>We would love to hear from you! Please fill out this form and we will get in touch with you shortly.</p>
+                            
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contact-first-name">First Name*</label>
+                                        <input type="text" id="contact-first-name" name="firstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-last-name">Last Name*</label>
+                                        <input type="text" id="contact-last-name" name="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contact-email">Email*</label>
+                                        <input type="email" id="contact-email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-phone">Phone</label>
+                                        <input type="tel" id="contact-phone" name="phone">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-subject">Subject</label>
+                                    <input type="text" id="contact-subject" name="subject" placeholder="What can we help you with?">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-message">Message*</label>
+                                    <textarea id="contact-message" name="message" rows="5" placeholder="Tell us about your situation or questions..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">
+                                    <i data-lucide="send"></i>
+                                    Send Message
+                                </button>
+                                <p class="form-disclaimer">
+                                    <i data-lucide="lock"></i>
+                                    Your information is secure and will never be shared
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🏠</span>
+                        <span class="logo-text">Fast House Buyers</span>
+                    </div>
+                    <p>We buy houses in any condition for cash. Get a fair offer today.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="/our-company.html">About Us</a>
+                        <a href="/how-we-buy-houses.html">How It Works</a>
+                        <a href="/testimonials.html">Testimonials</a>
+                        <a href="/contact.html">Contact Us</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="/get-a-cash-offer-today.html">Get Cash Offer</a>
+                        <a href="/foreclosure.html">Foreclosure Help</a>
+                        <a href="/stop-foreclosure.html">Stop Foreclosure Guide</a>
+                        <a href="/#faq">FAQ</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="tel:+1-832-602-2021"><i data-lucide="phone"></i> (832) 602-2021</a>
+                        <a href="mailto:alex@fasthousebuyers.net"><i data-lucide="mail"></i> alex@fasthousebuyers.net</a>
+                        <a href="#"><i data-lucide="map-pin"></i> 1234 Main St, Suite 100</a>
+                        <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Houston, TX 77002</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fast House Buyers. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="offerModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeOfferModal()">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <h2>Get Your Cash Offer</h2>
+                <p>Complete this form to receive your no-obligation cash offer within 24 hours</p>
+            </div>
+            <form id="detailedOfferForm" class="modal-form">
+                <div class="form-section">
+                    <h3>Property Information</h3>
+                    <div class="form-group">
+                        <label for="modal-address">Property Address*</label>
+                        <input type="text" id="modal-address" name="address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="property-type">Property Type*</label>
+                            <select id="property-type" name="propertyType" required>
+                                <option value="">Select Type</option>
+                                <option value="single-family">Single Family</option>
+                                <option value="condo">Condo</option>
+                                <option value="townhouse">Townhouse</option>
+                                <option value="multi-family">Multi-Family</option>
+                                <option value="mobile">Mobile Home</option>
+                                <option value="land">Land</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select id="bedrooms" name="bedrooms">
+                                <option value="">Select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5+">5+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="condition">Property Condition</label>
+                        <select id="condition" name="condition">
+                            <option value="">Select Condition</option>
+                            <option value="excellent">Excellent - Move-in Ready</option>
+                            <option value="good">Good - Minor Repairs Needed</option>
+                            <option value="fair">Fair - Some Repairs Needed</option>
+                            <option value="poor">Poor - Major Repairs Needed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>Your Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="modal-first-name">First Name*</label>
+                            <input type="text" id="modal-first-name" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="modal-last-name">Last Name*</label>
+                            <input type="text" id="modal-last-name" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-phone">Phone Number*</label>
+                        <input type="tel" id="modal-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-email">Email Address*</label>
+                        <input type="email" id="modal-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="timeframe">When do you need to sell?</label>
+                        <select id="timeframe" name="timeframe">
+                            <option value="">Select Timeframe</option>
+                            <option value="asap">ASAP</option>
+                            <option value="30days">Within 30 days</option>
+                            <option value="60days">Within 60 days</option>
+                            <option value="90days">Within 90 days</option>
+                            <option value="flexible">I'm flexible</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Get My Cash Offer</button>
+                <p class="form-disclaimer">
+                    <i data-lucide="lock"></i>
+                    Your information is secure and will never be shared
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js?v=2"></script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        // Form handler is now managed by main.js
+    </script>
+</body>
+</html>
